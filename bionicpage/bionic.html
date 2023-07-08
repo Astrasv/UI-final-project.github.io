@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="styles.css"> 
+      <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h3 class="heading">The <span>Bio</span>nic Text Editor</h3>
+      <nav class="navbar">
+          <a href="../jokes/index.html" target="_blank" class="pulse"><em>Random joke?</em></a>
+          <a href="../index.html" ><i class='bx bxs-log-out-circle logout'></i></a>
+          <a href="#theme" class="active">Theme</a>
+          <a href="#main">Bionise</a>
+
+      </nav>
+    </header>
+    <div class="empty">     
+
+    </div>  
+    <section id="theme" class="theme">
+      <div class="theme-content">
+        <h4 class="contenthead"><span><b>Custo</b></span>mize <span><b>yo</b></span>ur <span><b>ow</b></span>n <span><b>col</b></span>or <span><b>pal</b></span>let</h3>
+        <div class="color-picker">
+          <div class="color-option">
+            <label for="colorpicker2">First Background</label>
+            <input type="color" id="colorpicker1" value="#1f242d">
+      
+          </div>
+          <div class="color-option">
+            <label for="colorpicker2">Second Background</label>
+            <input type="color" id="colorpicker2" value="#323946">
+          </div>
+          <div class="color-option">
+            <label for="colorpicker3">Main text color</label>
+            <input type="color" id="colorpicker3" value="#ffffff">
+          </div>
+          <div class="color-option">
+            <label for="colorpicker4">Bionised text color</label>
+            <input type="color" id="colorpicker4" value="#0effff">
+          </div>
+        </div>  
+        <a id="apply-colors" class="submit-color" onclick="applyColor()" href="#main">Apply</a> 
+        <a id="reset-colors" class="submit-color" onclick="resetColor()">Reset</a>
+        <a id="go-to-bionise" class="submit-color" href="#main">Go to Bionise</a> 
+      </div>
+      <img src="asset/choose theme.png" alt="Choose theme" class="theme-img">
+    </section>
+
+
+
+
+    <section class="main" id="main">
+      <h4 class="label"><span><b>Bionis</b></span>ation <span><b>inten</b></span>sity <span><b>(H</b></span>ow <span><b>mu</b></span>ch <span><b>perce</b></span>ntage <span><b>t</b></span>o <span><b>bold</b></span>en)</h4>
+      <div class="sliderval">
+        <input type="range" min="1" max="100" value="50" class="slider" id="perc">
+        <p id="percval">None</p>
+      </div>
+
+      <div class="inputreg">
+        <textarea name="input-text" id="input-text" placeholder="Enter the text to be converted"></textarea>
+        <p id="output-text"><span class="blur">Ready to be converted</span></p>
+      </div>
+      <a onclick="formatText()" class="submit"><b>Bionise</b></a>
+    </section>
+
+
+  </body>
+  <script src="script.js"></script>
+
+</html>
+
+
+
