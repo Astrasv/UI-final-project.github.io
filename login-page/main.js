@@ -178,7 +178,7 @@ function sendMail2(){
 
 function NewTab() {
     window.open(
-      "bionicpage/bionic.html", "_blank");
+      "../bionicpage/bionic.html", "_blank");
 }
 
 
